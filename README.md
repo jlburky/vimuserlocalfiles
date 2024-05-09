@@ -1,39 +1,44 @@
-# vimuserlocalfiles
+vimuserlocalfiles
+=================
 
-## Neovim Configuration
+Pre-reqs
+--------
 
-### Neovim Files and Folders
+* Ubuntu 20.04
+* Install `flake8`:
+```
+$ sudo apt install flake8
+```
+* Clone Doc Mike's vim from the link below and install vim by following his
+  `docs/notes`.
+  - https://github.com/drmikehenry/vimfiles
 
-The files and folders for Neovim are spread in different locations. Here the key
-files and locations:
+* Link your `~/.vim` to the vimfiles clone:
+```
+$ cd ~
+$ ln -fs /path/to/drmikehenry/vimfiles .vim
+```
 
-* `~/.config/nvim/init.vim` - enables Doc Mike's vimrc to run.
-* `~/.local/share/nvim/site/autoload/plug.vim` - open-source plugin used to
-  manage plugins. This file came from the location below and should not be
-  customized. Also, there are two copies of this file; one to support vim and
-  the other for Neovim.
-    - https://github.com/junegunn/vim-plug
-* `$VIMUSERLOCALFILE/plug.vim` - the open-source plugin used to manage plugins
-  for Vim. This is the same files as mentioned above.
-* `$VIMUSERLOCALFILE/plugin.vim` - custom script called by `plug.vim` for
-  management of desired plugins for both Vim and Neovim.
-* `$VIMUSERLOCALUSERFILES/plugged` - stores all the downloaded plugins.
+* Add the following to your `~/.vimrc` file:
+```
+runtime vimrc
+```
 
-### Neovim Plugins Pre-reqs
+Vim/gVim Installation
+---------------------
 
-* libc-dev package - required to build the `telescope-fzf-native.nvim`.
-    - `libc6-dev` on Ubuntu 20.04
-    - TODO: determine package for Fedora
+Clone this repo;
+```
+$ git clone git@gitlab.evoforge.org:jlburkh/vimuserlocalfiles.git
+```
 
-### vim-plug (plug.vim) Plug-in Manager for Neovim
+In your `.bashrc`:
+```
+export VIMUSERLOCALFILES="/path/to/this/clone"
+```
 
-* TODO: Should I describe how to install manually or let `plugin.vim` automatically
-  install plugins?
+Doc Mike's `docs/notes/notes_customizations` explains this setup.
 
-## To Do
-* Remove plugins that Doc Mike is already providing.
-* Test if `plugin.vim` can automatically copy plug.vim and download plugins.
-* Merge my `vimuserlocalfiles/README.md` and craig's together into this
-  document.
-* Determine plugin dependencies for Fedora.
-* Merge files from Craig's repo into here.
+### NeoVim
+For NeoVim installation and configuration, refer to the [NeoVim
+Guide](NEOVIM.md).

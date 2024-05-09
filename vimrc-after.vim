@@ -1,3 +1,5 @@
+"echo "Executing VIMUSERLOCALFILES vimrc-after"
+
 "Remap Shift + Space to escape.
 inoremap <S-Space> <Esc>
 

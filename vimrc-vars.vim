@@ -1,4 +1,4 @@
-echo "Executing VIMUSERLOCALFILES vimrc-vars"
+"echo "Executing VIMUSERLOCALFILES vimrc-vars"
 " This file is sourced early in Doc Mike's vimrc. This gives us the chance to
 " disable plugins before calling pathogen#infect.
 "
