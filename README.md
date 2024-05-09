@@ -15,7 +15,7 @@ files and locations:
     - https://github.com/junegunn/vim-plug
 * `$VIMUSERLOCALFILE/plug.vim` - the open-source plugin used to manage plugins
   for Vim. This is the same files as mentioned above.
-* `$VIMUSERLOCALFILE/plugin.vim` - custom script called by plug.vim for
+* `$VIMUSERLOCALFILE/plugin.vim` - custom script called by `plug.vim` for
   management of desired plugins for both Vim and Neovim.
 * `$VIMUSERLOCALUSERFILES/plugged` - stores all the downloaded plugins.
 
@@ -27,9 +27,13 @@ files and locations:
 
 ### vim-plug (plug.vim) Plug-in Manager for Neovim
 
+* TODO: Should I describe how to install manually or let `plugin.vim` automatically
+  install plugins?
 
 ## To Do
 * Remove plugins that Doc Mike is already providing.
 * Test if `plugin.vim` can automatically copy plug.vim and download plugins.
 * Merge my `vimuserlocalfiles/README.md` and craig's together into this
   document.
+* Determine plugin dependencies for Fedora.
+* Merge files from Craig's repo into here.
