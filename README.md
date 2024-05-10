@@ -36,6 +36,33 @@ export VIMUSERLOCALFILES="/path/to/this/clone"
 
 Doc Mike's `docs/notes/notes_customizations` explains this setup.
 
-### NeoVim
+NeoVim
+------
+
 For NeoVim installation and configuration, refer to the [NeoVim
 Guide](NEOVIM.md).
+
+Directory Structure
+-------------------
+
+The following directory structure is used:
+
+```
+$VIMUSERLOCALFILES/
+├── vimrc-vars.vim                # Enable/Disable bundle plugins (pathogen)
+├── vimrc-after.vim               # User vimrc
+├── plugins.vim                   # List of vim-plug plugins
+├── lua                           # user lua modules
+│   └── user                      # user namespace for lua inits
+│       ├── init.lua              # user init for neovim
+│       ├── lsp_config.lua        # user config for lsp's and completion
+│       └── telescope             # user plugin-specific inits
+│           ├── init.lua
+│           └── mappings.lua
+├── plugged                       # output dir for vim-plug
+│   ├── plugin
+│   ├── ...
+│   ├── plugin
+├── UltiSnips
+│   └── custom snippets
+```

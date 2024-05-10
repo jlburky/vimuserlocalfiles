@@ -5,6 +5,10 @@ let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 let plugvim = $VIMUSERLOCALFILES . '/plug.vim'
 let autoload_dir = data_dir . '/autoload'
 if empty(glob(data_dir . '/autoload/plug.vim'))
+    if !isdirectory(autoload_dir)
+        echom "Creating directory " . autoload_dir
+        call mkdir(autoload_dir, "p", 0700)
+    endif
     echom "Copying " plugvim . " to " . autoload_dir
     silent execute '!cp ' . plugvim . ' ' . autoload_dir
 endif
