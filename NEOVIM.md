@@ -102,6 +102,4 @@ NeoVim initializes in the follow order:
 ```
 
 ## To Do
-* Merge my `vimuserlocalfiles/README.md` and craig's together into this
-  document.
 * Determine plugin dependencies for Fedora.
