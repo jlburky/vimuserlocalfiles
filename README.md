@@ -5,10 +5,7 @@ Pre-reqs
 --------
 
 * Ubuntu 20.04
-* Install `flake8`:
-```
-$ sudo apt install flake8
-```
+* `flake8` package
 * Clone Doc Mike's vim from the link below and install vim by following his
   `docs/notes`.
   - https://github.com/drmikehenry/vimfiles
@@ -24,12 +21,12 @@ $ ln -fs /path/to/drmikehenry/vimfiles .vim
 runtime vimrc
 ```
 
-Vim/gVim Installation
+Vim/Gvim Installation
 ---------------------
 
 Clone this repo;
 ```
-$ git clone git@gitlab.evoforge.org:jlburkh/vimuserlocalfiles.git
+$ git clone git@github:jlburky/vimuserlocalfiles.git
 ```
 
 In your `.bashrc`:
