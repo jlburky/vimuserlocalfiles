@@ -5,7 +5,6 @@
 let g:EnableAle = 0
 let g:EnableSyntastic = 0
 let g:EnableVimLsp = 0
-let g:EnableVimLsp = 0
 
 " Manually disable plugins installed by pathogen here.
 "

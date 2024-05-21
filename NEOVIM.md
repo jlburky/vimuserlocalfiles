@@ -103,3 +103,5 @@ NeoVim initializes in the follow order:
 
 ## To Do
 * Determine plugin dependencies for Fedora.
+* Fix funny characters in NvimTree.
+* Install and setup LSP.

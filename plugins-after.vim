@@ -68,6 +68,7 @@ else
 
         "File managers
         Plug 'nvim-tree/nvim-tree.lua'
+        Plug 'nvim-tree/nvim-web-devicons'
 
         "Lsp related
         Plug 'neovim/nvim-lspconfig'

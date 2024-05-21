@@ -46,8 +46,7 @@ endfunction
 autocmd VimEnter * call NvimStartup()
 
 " Source script which manages extra plugins not provided by base config.
-"source ~/linuxconfig/vimlocal/plugins.vim
-source $VIMUSERLOCALFILES/plugins.vim
+source $VIMUSERLOCALFILES/plugins-after.vim
 
 " Custom plugins:
 source $VIMUSERLOCALFILES/custom_plugins/docsync/plugin/docsync.vim
@@ -93,7 +92,6 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
-
 "-------------------------------------------------------------------------------
 " Plugin Specific: jedi python
 " ------------------------------------------------------------------------------
@@ -106,5 +104,4 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 " Plugin Specific: Ranger file manager
 " ------------------------------------------------------------------------------
 "let g:ranger_replace_netrw = 1
-
-let g:undotree_WindowLayout=2
+"let g:undotree_WindowLayout=2

@@ -66,3 +66,7 @@ $VIMUSERLOCALFILES/
 ├── UltiSnips
 │   └── custom snippets
 ```
+
+To Do
+-----
+* Relocate swap files.
