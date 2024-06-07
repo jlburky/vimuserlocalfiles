@@ -67,6 +67,21 @@ $VIMUSERLOCALFILES/
 │   └── custom snippets
 ```
 
+Troubleshooting
+---------------
+
+### Python Errors
+To see if Vim was compiled with `python` or `python3`, from the vim console type:
+```
+:echo has('python3')
+```
+It wlll return 0 or 1.
+
+### Vim Compilation
+To see the compilation features of your vim include version of python execute:
+```
+vim --version
+```
 To Do
 -----
 * Relocate swap files.
