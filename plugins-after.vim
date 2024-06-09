@@ -15,83 +15,62 @@ endif
 
 let plugged = $VIMUSERLOCALFILES . '/plugged/'
 
-let offline_mode = 0
+" Path to Doc Mike's NVIM-specific bundles.
+let nvim_bundle = $HOME . '/.vim/nvim/bundle/'
 
 call plug#begin(plugged)
 
-if offline_mode
-    " Vim or Nvim plugins (see below for git paths for online mode)
-    Plug plugged . 'ranger.vim'
-    Plug plugged . 'Align'
+    " Vim or Neovim plugins
+Plug 'francoiscabrol/ranger.vim'
+Plug 'vim-scripts/Align'
 
-    " Add neovim plugins.
-    if has('nvim')
-        Plug plugged . 'nvim-notify'
+" Neovim plugins
+if has('nvim')
+    Plug 'rcarriga/nvim-notify'
 
-        "Telescope
-        Plug plugged . 'telescope-fzf-native.nvim'
+    "Telescope
+    Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
-        "File managers
-        Plug plugged . 'nvim-tree.lua'
+    "File managers
+    Plug 'nvim-tree/nvim-tree.lua'
+    Plug 'nvim-tree/nvim-web-devicons'
 
-        "Lsp related
-        Plug plugged . 'nvim-lspconfig'
-        Plug plugged . 'nvim-cmp'
-        Plug plugged . 'cmp-nvim-lua'
-        Plug plugged . 'cmp_luasnip'
+    "Lsp related
+    "Plug 'neovim/nvim-lspconfig'
+    "Plug 'hrsh7th/nvim-cmp'
+    Plug 'hrsh7th/cmp-nvim-lua'
+    Plug 'saadparwaiz1/cmp_luasnip'
 
-        "Required by ranger.vim
-        Plug plugged . 'bclose.vim'
+    "Required by ranger.vim
+    Plug 'rbgrouleff/bclose.vim'
 
-        Plug plugged . 'undotree'
+    Plug 'mbbill/undotree'
 
-        "Nice colorscheme
-        Plug plugged . 'nightfox.vim'
-        Plug plugged . 'iceberg.vim'
-        Plug plugged . 'melange'
-        Plug plugged . 'sonokai'
+    "Cheat.sh"
+    Plug 'RishabhRD/popfix'
+    Plug 'RishabhRD/nvim-cheat.sh'
 
-    endif
-else
-    " Vim or NVim plugins
-    Plug 'francoiscabrol/ranger.vim'
-    Plug 'vim-scripts/Align'
+    "Nice colorschemes
+    Plug 'EdenEast/nightfox.nvim'
+    Plug 'cocopon/iceberg.vim'
+    Plug 'savq/melange'
+    Plug 'sainnhe/sonokai'
 
-    "Plug 'davidhalter/jedi-vim'   "using pyls now. Keep for reference.
+    " cscope_maps dependencies
+    Plug 'dhananjaylatkar/cscope_maps.nvim'
 
-    " Add neovim plugins.
-    if has('nvim')
-        Plug 'rcarriga/nvim-notify'
-
-        "Telescope
-        Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
-
-        "File managers
-        Plug 'nvim-tree/nvim-tree.lua'
-        Plug 'nvim-tree/nvim-web-devicons'
-
-        "Lsp related
-        Plug 'neovim/nvim-lspconfig'
-        Plug 'hrsh7th/nvim-cmp'
-        Plug 'hrsh7th/cmp-nvim-lua'
-        Plug 'saadparwaiz1/cmp_luasnip'
-
-        "Required by ranger.vim
-        Plug 'rbgrouleff/bclose.vim'
-
-        "Nice colorschemes
-        Plug 'EdenEast/nightfox.nvim'
-        Plug 'cocopon/iceberg.vim'
-        Plug 'savq/melange'
-        Plug 'sainnhe/sonokai'
-
-        Plug 'mbbill/undotree'
-
-        "Cheat.sh"
-        Plug 'RishabhRD/popfix'
-        Plug 'RishabhRD/nvim-cheat.sh'
-    endif
-
+    "Add Doc Mike baseline bundled plugins.
+    Plug nvim_bundle . 'cmp'
+    Plug nvim_bundle . 'cmp-buffer'
+    Plug nvim_bundle . 'cmp-cmdline'
+    Plug nvim_bundle . 'cmp-nvim-lsp'
+    Plug nvim_bundle . 'cmp-nvim-ultisnips'
+    Plug nvim_bundle . 'cmp-path'
+    Plug nvim_bundle . 'lspconfig'
+    Plug nvim_bundle . 'null-ls'
+    Plug nvim_bundle . 'plenary'
+    Plug nvim_bundle . 'telescope'
+    Plug nvim_bundle . 'which-key'
 endif
 
 call plug#end()
