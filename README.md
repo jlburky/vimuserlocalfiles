@@ -3,26 +3,27 @@ vimuserlocalfiles
 
 Pre-reqs
 --------
+* Vim
 
-* Ubuntu 20.04
-* `flake8` package
-* Clone Doc Mike's vim from the link below and install vim by following his
+Vim/Gvim Configuration
+----------------------
+
+Clone Doc Mike's `vimfiles` from the link below and install vim by following his
   `docs/notes`.
-  - https://github.com/drmikehenry/vimfiles
+```
+$ git clone git@github.com:drmikehenry/vimfiles.git
+```
 
-* Link your `~/.vim` to the vimfiles clone:
+Link your `~/.vim` to the vimfiles clone:
 ```
 $ cd ~
 $ ln -fs /path/to/drmikehenry/vimfiles .vim
 ```
 
-* Add the following to your `~/.vimrc` file:
+Add the following to your `~/.vimrc` file:
 ```
 runtime vimrc
 ```
-
-Vim/Gvim Installation
----------------------
 
 Clone this repo;
 ```
