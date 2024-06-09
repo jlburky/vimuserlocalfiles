@@ -2,10 +2,11 @@
 
 # Pre-reqs 
 * Vim is installed and functioning. See [README](./README.md).
-* ninja-build
+* `lua5.3`
+* `ninja-build`
 * libstdc++-static
-* ripgrep
-* shellcheck (is this really needed?)
+* `ripgrep`
+* `shellcheck` (is this really needed?)
 * libc-dev package - required to build the `telescope-fzf-native.nvim`.
     - `libc6-dev` on Ubuntu 20.04
     - TODO: determine package for Fedora
