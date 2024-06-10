@@ -4,6 +4,7 @@
 * Vim is installed and functioning. See [README](./README.md).
 * `lua5.3`
 * `ninja-build`
+* `rxvt-unicode-256color`
 * libstdc++-static
 * `ripgrep`
 * `shellcheck` (is this really needed?)

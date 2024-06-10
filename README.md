@@ -85,4 +85,5 @@ vim --version
 ```
 To Do
 -----
+* Continue to test vim/nvim configurations on a new system.
 * Relocate swap files.
