@@ -8,6 +8,9 @@ local utils = require('user.utils')
 --vim.cmd("colorscheme nightfox")
 vim.cmd("colorscheme sonokai")
 
+-- Set to enable nvim truecolor (true) or 256 (false)
+print("Setting nvim to emit 256 colours instead of true colour.")
+vim.opt.termguicolors = false
 
 -- Load Lua user initializations
 require('user.lsp_config')

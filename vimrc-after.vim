@@ -29,7 +29,8 @@ nnoremap <F11> :set invlist<CR>
 colo szakdark
 
 " Configurations to set the colors configurations (e.g 256, truecolor)
-if $TERM == 'rxvt-unicode'
+if $TERM == 'rxvt-unicode' || $TERM == 'rxvt-unicode-256color'
+    autocmd Vimenter * echo "Settings specific to rxvt-unicode emulator in vimrc-after."
     set t_Co=256
     set notermguicolors
 endif
