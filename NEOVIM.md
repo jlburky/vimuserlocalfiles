@@ -139,6 +139,13 @@ To determine Python version:
 :py3 import sys; print(sys.executable)
 ```
 
+To set whether nvim emits true (24-bit) colours or 256 set the variable below.
+Currently, this variable is set in the `nvim-tree/init.lua`.
+```nvim
+-- Set if nvim emits truecolor (true) or 256 (false)
+vim.opt.termguicolors = false
+```
+
 ## To Do
 
 * Determine plugin dependencies for Fedora.

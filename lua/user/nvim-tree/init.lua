@@ -3,7 +3,8 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-vim.opt.termguicolors = true
+-- Set if nvim emits truecolor (true) or 256 (false)
+vim.opt.termguicolors = false
 
 local function on_attach(bufnr)
     local api = require('nvim-tree.api')

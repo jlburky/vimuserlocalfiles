@@ -28,6 +28,12 @@ nnoremap <F11> :set invlist<CR>
 " Set a default colorsheme
 colo szakdark
 
+" Configurations to set the colors configurations (e.g 256, truecolor)
+if $TERM == 'rxvt-unicode'
+    set t_Co=256
+    set notermguicolors
+endif
+
 " Function for Neovim startup
 function NvimStartup()
     if has('nvim')
@@ -52,12 +58,6 @@ source $VIMUSERLOCALFILES/plugins-after.vim
 source $VIMUSERLOCALFILES/custom_plugins/docsync/plugin/docsync.vim
 let g:Docsync_loglevel = "info"
 let g:Docsync_enable_logging = 1
-
-
-if $TERM == 'rxvt-unicode'
-    "set t_Co=256
-    set termguicolors
-endif
 
 " Set tab settings for filetypes:
 autocmd Filetype htmldjango setlocal ts=4 sw=4 sts=4 expandtab
@@ -105,3 +105,4 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 " ------------------------------------------------------------------------------
 "let g:ranger_replace_netrw = 1
 "let g:undotree_WindowLayout=2
+
