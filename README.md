@@ -3,7 +3,7 @@ vimuserlocalfiles
 
 Pre-reqs
 --------
-* Vim
+* Vim compiled with Python 3.6+
 
 Vim/Gvim Configuration
 ----------------------
@@ -77,6 +77,11 @@ To see if Vim was compiled with `python` or `python3`, from the vim console type
 :echo has('python3')
 ```
 It wlll return 0 or 1.
+
+To get the python3 version Vim compiled:
+```
+:python3 import sys; print(sys.version)
+```
 
 ### Vim Compilation
 To see the compilation features of your vim include version of python execute:
