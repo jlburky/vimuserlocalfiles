@@ -16,7 +16,7 @@ endif
 let plugged = $VIMUSERLOCALFILES . '/plugged/'
 
 " Path to Doc Mike's NVIM-specific bundles.
-let nvim_bundle = $HOME . '/.vim/nvim/bundle/'
+let nvim_bundle = $HOME . '/.vim/nvim-bundle/'
 
 call plug#begin(plugged)
 
