@@ -20,34 +20,10 @@
 Follow the Neovim instructions in Doc Mike's `vimfiles/docs/notes`. NOTE:
   be sure `nvim-linux64` directory has correct permissions.
 
-Install the `neovim` package to your native Python3, locally:
-```bash
-$ python3 -m pip install neovim
-```
-
-To use nvim-lsp pylsp, install language servers:
-```bash
-$ python3 -m pip install python-language-server[all]
-```
-
-Clone and build the lua language server, Sumneko:
-```bash
-git clone https://github.com/sumneko/lua-language-server
-cd lua-language-server/
-git submodule update --init --recursive
-cd 3rd/luamake
-compile/install.sh
-cd ../..
-./3rd/luamake/luamake rebuild
-```
+Still need to figure out...
 
 ## Configurations
-Create the file `~/.config/nvim/init.vim` and add the following:
-```vim
-set runtimepath^=~/.vim runtimepath+=~/.vim/after
-let &packpath = &runtimepath
-source ~/.vimrc
-```
+Still need to figure out...
 
 ## Neovim Files and Folders
 
