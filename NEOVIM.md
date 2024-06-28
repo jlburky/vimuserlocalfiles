@@ -6,7 +6,9 @@
 * `ninja-build`
 * `rxvt-unicode-256color`
 * libstdc++-static
-* `ripgrep`
+* Telescope plugin
+  * `ripgrep`
+  * `fd-find`
 * `shellcheck` (is this really needed?)
 * libc-dev package - required to build the `telescope-fzf-native.nvim`.
     - `libc6-dev` on Ubuntu 20.04
