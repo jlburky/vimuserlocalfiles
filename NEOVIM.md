@@ -2,18 +2,22 @@
 
 # Pre-reqs 
 * Vim is installed and functioning. See [README](./README.md).
+* Python `pynvim` package
+
+## Ubuntu 20.04 Packages
+* `rxvt-unicode-256color`
 * `lua5.3`
 * `ninja-build`
-* `rxvt-unicode-256color`
-* libstdc++-static
-* Telescope plugin
+* `libstdc++-static`
+* Telescope plugin support
   * `ripgrep`
   * `fd-find`
-* `shellcheck` (is this really needed?)
-* libc-dev package - required to build the `telescope-fzf-native.nvim`.
-    - `libc6-dev` on Ubuntu 20.04
-    - TODO: determine package for Fedora
-
+* null-ls plugin support
+  * `shellcheck`
+* telescope-fzf-native plugin support
+  * `libc6-dev` on Ubuntu 20.04
+* Clipboard
+  * `xclip`
 
 ## Installations
 
@@ -123,12 +127,3 @@ Currently, this variable is set in the `nvim-tree/init.lua`.
 -- Set if nvim emits truecolor (true) or 256 (false)
 vim.opt.termguicolors = false
 ```
-
-## To Do
-
-* Determine plugin dependencies for Fedora.
-* Fix funny characters in NvimTree.
-* Install and setup LSP.
-* Debug why null-ls is reporting errors.
-* Copy tips from cweave72
-* Debug why \gq doesn't format.

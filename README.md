@@ -88,8 +88,16 @@ To see the compilation features of your vim include version of python execute:
 ```
 vim --version
 ```
+
 To Do
 -----
+* Next, try adding back calls from `user/init.lua`.
+* Try adding additional plugins from `plugins-after.vim`.
 * Continue to test vim/nvim configurations on a new system.
 * Relocate swap files.
 * Setup nvim offline plugins.
+* Determine plugin dependencies for Fedora.
+* Fix funny characters in NvimTree.
+* Install and setup LSP.
+* Debug why null-ls is reporting errors.
+* Debug why \gq doesn't format.
