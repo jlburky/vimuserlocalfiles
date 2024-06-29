@@ -15,62 +15,52 @@ endif
 
 let plugged = $VIMUSERLOCALFILES . '/plugged/'
 
-" Path to Doc Mike's NVIM-specific bundles.
-let nvim_bundle = $HOME . '/.vim/nvim-bundle/'
-
 call plug#begin(plugged)
 
-    " Vim or Neovim plugins
-Plug 'francoiscabrol/ranger.vim'
+" Both Vim and Neovim plugins
 Plug 'vim-scripts/Align'
 
+" The following Neovim plugins are already installed by vimfiles' nvim-bundle.
+" 'cmp'
+" 'cmp-buffer'
+" 'cmp-cmdline'
+" 'cmp-nvim-lsp'
+" 'cmp-nvim-ultisnips'
+" 'cmp-path'
+" 'cscope_maps'
+" 'lspconfig'
+" 'melange'
+" 'nightfox'
+" 'null-ls'
+" 'plenary'
+" 'telescope'
+" 'which-key'
+
 " Neovim plugins
-if has('nvim')
-    Plug 'rcarriga/nvim-notify'
-
-    "Telescope
-    Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
-
-    "File managers
-    Plug 'nvim-tree/nvim-tree.lua'
-    Plug 'nvim-tree/nvim-web-devicons'
-
-    "Lsp related
-    "Plug 'neovim/nvim-lspconfig'
-    "Plug 'hrsh7th/nvim-cmp'
-    Plug 'hrsh7th/cmp-nvim-lua'
-    Plug 'saadparwaiz1/cmp_luasnip'
-
-    "Required by ranger.vim
-    Plug 'rbgrouleff/bclose.vim'
-
-    Plug 'mbbill/undotree'
-
-    "Cheat.sh"
-    Plug 'RishabhRD/popfix'
-    Plug 'RishabhRD/nvim-cheat.sh'
-
-    "Nice colorschemes
-    Plug 'EdenEast/nightfox.nvim'
-    Plug 'cocopon/iceberg.vim'
-    Plug 'savq/melange'
-    Plug 'sainnhe/sonokai'
-
-    " cscope_maps dependencies
-    Plug 'dhananjaylatkar/cscope_maps.nvim'
-
-    "Add Doc Mike baseline bundled plugins.
-    Plug nvim_bundle . 'cmp'
-    Plug nvim_bundle . 'cmp-buffer'
-    Plug nvim_bundle . 'cmp-cmdline'
-    Plug nvim_bundle . 'cmp-nvim-lsp'
-    Plug nvim_bundle . 'cmp-nvim-ultisnips'
-    Plug nvim_bundle . 'cmp-path'
-    Plug nvim_bundle . 'lspconfig'
-    Plug nvim_bundle . 'null-ls'
-    Plug nvim_bundle . 'plenary'
-    Plug nvim_bundle . 'telescope'
-    Plug nvim_bundle . 'which-key'
-endif
+"if has('nvim')
+"    Plug 'rcarriga/nvim-notify'
+"
+"    "Telescope
+"    Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+"
+"    "File managers
+"    Plug 'nvim-tree/nvim-tree.lua'
+"    Plug 'nvim-tree/nvim-web-devicons'
+"
+"    "Lsp related
+"    Plug 'hrsh7th/cmp-nvim-lua'
+"    Plug 'saadparwaiz1/cmp_luasnip'
+"
+"    Plug 'mbbill/undotree'
+"
+"    "Cheat.sh
+"    Plug 'RishabhRD/popfix'
+"    Plug 'RishabhRD/nvim-cheat.sh'
+"
+"    "Nice colorschemes
+"    Plug 'cocopon/iceberg.vim'
+"    Plug 'sainnhe/sonokai'
+"
+"endif
 
 call plug#end()

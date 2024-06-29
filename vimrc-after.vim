@@ -39,9 +39,9 @@ endif
 function NvimStartup()
     if has('nvim')
         " If telescope is not installed, assume no plugins are installed.
-        if !exists(":Telescope")
-            PlugInstall --sync
-        endif
+        "if !exists(":Telescope")
+        "    PlugInstall --sync
+        "endif
 
         "Run initializations.
         lua require('user.init')

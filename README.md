@@ -52,7 +52,7 @@ The following directory structure is used:
 $VIMUSERLOCALFILES/
 ├── vimrc-vars.vim                # Enable/Disable bundle plugins (pathogen)
 ├── vimrc-after.vim               # User vimrc
-├── plugins.vim                   # List of vim-plug plugins
+├── plugins-after.vim             # List of vim-plug plugins
 ├── lua                           # user lua modules
 │   └── user                      # user namespace for lua inits
 │       ├── init.lua              # user init for neovim
