@@ -4,6 +4,7 @@ vimuserlocalfiles
 Pre-reqs
 --------
 * Vim compiled with Python 3.6+
+* `dataclasses` Python package 
 
 Vim/Gvim Configuration
 ----------------------
