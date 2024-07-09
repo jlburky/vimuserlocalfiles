@@ -46,6 +46,10 @@ if has('gui_running')
 
     " Set the default Gvim font
     set guifont=Monospace\ 11
+
+    " Set column marking to col 100 and color to black
+    set colorcolumn=100
+    highlight ColorColumn term=NONE term=NONE ctermfg=NONE ctermbg=233 guibg=#111111 guifg=NONE
 endif
 
 " Function for Neovim startup
