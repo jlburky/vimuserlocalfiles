@@ -32,6 +32,13 @@ nnoremap <F11> :set invlist<CR>
 "colo bluegree
 colo szakdark
 
+" Set the location of vim swapfiles and create directory if needed
+let swapdir = $HOME . '/.vimswapfiles'
+if !isdirectory(swapdir)
+    call mkdir(swapdir, "p", 0755)
+endif
+set directory=$HOME/.vimswapfiles/
+
 " Configurations to set the colors configurations (e.g 256, truecolor)
 if $TERM == 'rxvt-unicode' || $TERM == 'rxvt-unicode-256color'
     autocmd Vimenter * echo "Settings specific to rxvt-unicode emulator in vimrc-after."
