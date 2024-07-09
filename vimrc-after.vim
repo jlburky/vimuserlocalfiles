@@ -55,7 +55,7 @@ if has('gui_running')
     set guifont=Monospace\ 11
 
     " Set column marking to col 100 and color to black
-    set colorcolumn=100
+    set colorcolumn=80
     highlight ColorColumn term=NONE term=NONE ctermfg=NONE ctermbg=233 guibg=#111111 guifg=NONE
 endif
 
