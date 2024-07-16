@@ -101,4 +101,6 @@ To Do
 * Fix funny characters in NvimTree.
 * Install and setup LSP.
 * Debug why null-ls is reporting errors.
-* Debug why \gq doesn't format.
+* Fix delay in lua/user/init.lua.
+* Experiment with oil.nvim.
+* Consider removing nvim-tree.
