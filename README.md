@@ -3,7 +3,10 @@ vimuserlocalfiles
 
 Pre-reqs
 --------
-* Vim compiled with Python 3.6+
+* Vim 8.1 or later compiled with:
+    * Python 3.6 or later
+    * `xterm_clipboard`
+    * Note: to see compilation options `vim --version`.
 * `dataclasses` Python package 
 
 Vim/Gvim Configuration
