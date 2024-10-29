@@ -3,10 +3,9 @@ vimuserlocalfiles
 
 Pre-reqs
 --------
-* Vim 8.1 or later compiled with:
-    * Python 3.6 or later
+* Vim compiled with:
+    * Python 3.6+
     * `xterm_clipboard`
-    * Note: to see compilation options `vim --version`.
 * `dataclasses` Python package 
 
 Vim/Gvim Configuration
@@ -104,6 +103,4 @@ To Do
 * Fix funny characters in NvimTree.
 * Install and setup LSP.
 * Debug why null-ls is reporting errors.
-* Fix delay in lua/user/init.lua.
-* Experiment with oil.nvim.
-* Consider removing nvim-tree.
+* Debug why \gq doesn't format.

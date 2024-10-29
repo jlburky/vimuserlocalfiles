@@ -4,8 +4,10 @@
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 let plugvim = $VIMUSERLOCALFILES . '/plug.vim'
 let autoload_dir = data_dir . '/autoload'
+" Check that plug.vim file does not exist
 if empty(glob(data_dir . '/autoload/plug.vim'))
-    if !isdirectory(autoload_dir)
+    " Check that autoload dir does not exist
+    if empty(glob(autoload_dir))
         echom "Creating directory " . autoload_dir
         call mkdir(autoload_dir, "p", 0700)
     endif
