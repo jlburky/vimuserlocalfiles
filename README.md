@@ -3,10 +3,11 @@ vimuserlocalfiles
 
 Pre-reqs
 --------
-* Vim compiled with:
+* Vim 8.1+ compiled with:
     * Python 3.6+
     * `xterm_clipboard`
 * `dataclasses` Python package 
+* `ctags` 
 
 Vim/Gvim Configuration
 ----------------------
