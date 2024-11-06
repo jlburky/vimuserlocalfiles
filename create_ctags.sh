@@ -19,7 +19,7 @@ fi
 
 # Find Explained TODO
 # -type d         All directories 
-#
+
 find . -type d \
     \( -name ".[a-zA-Z]*" -prune -o \
     -name "export" -prune \) -o \
