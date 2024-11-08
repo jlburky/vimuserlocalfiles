@@ -18,7 +18,13 @@ if [[ ($# == "--help") || ($# == "-h") ]]; then
 fi
 
 # Find Explained TODO
-# -type d         All directories 
+# -type d                    All directories 
+# -name ".[a-zA-Z]*" -prune  Exclude any directories that begin with ".<any letter>"
+# -name "export" -prune      Exclude any directories named "export"
+# -name "*.py"               Include all python files
+# -name "*.ch"               Include all C files
+# -name "*.cc"               Include all C++ source files
+# -name "*.hh"               Include all C++ header files
 
 find . -type d \
     \( -name ".[a-zA-Z]*" -prune -o \
@@ -36,4 +42,10 @@ find . -type d \
 #  k  Kind of tag as a single letter
 #  s  Scope of tag definition
 #  t Type and name of variable or typedef as "typeref:" field
+#
+#  --python-kinds  Python specific tagging options; use +- to add/remove
+#    i  Imports
+#
+# --extra  Extra flags; use +- to add/remove
+#   q  Include extra class-qualified tag entry for each tag which is a member of a class
 ctags -L .ctagsfiles --python-kinds=-i --extra=+q
